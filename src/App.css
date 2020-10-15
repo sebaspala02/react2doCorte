@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Estilo del dado */
+
+.btn {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+}
+
+.btn.rounded {
+  border-radius: 50px;
+}
+
+.btn-text {
+  color: white;
+  /* // check out mdn docs for different types of blend modes.  */
+  mix-blend-mode: difference;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+.text-green {
+  color: #00f0b5;
+  mix-blend-mode: difference;
+}
+
+.rounded:before {
+  border-radius: 50px;
+  width: 25%;
+  background: #00f0b5;
+}
+
+.rounded:hover {
+  background: #f0b000;
+  width: 21%;
+}
+
+.btn {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+}
+
+.btn:before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Estilo input */
+
+.redondeado {
+  border-radius: 15px;
+  width : 27vh;
+  border: 1px solid rgb(255, 0, 0);
+  font-family : inherit;
+  font-size   : 100%;
+}
+.confondo {
+  background-color: rgba(239, 252, 195, 0.062);
+}
+
+.text-claro {
+  color: white;
+  mix-blend-mode: difference;
 }
