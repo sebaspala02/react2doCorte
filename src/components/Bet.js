@@ -9,11 +9,11 @@ export default function Bet({ number }) {
     const [msg, setMsg] = useState('');
 
     const play = () => {
-        setResult(Math.floor(Math.random() * 6));
+        setResult(Math.floor(Math.random() * 7));
     }
     const validate = () => {
         if (result !== 0)
-            result == number ? setMsg('Apuesta ganada!😎') : setMsg('Apuesta perdida 😭')
+            result == number ? setMsg('Apuesta ganada!🥳') : setMsg('Apuesta perdida 😭')
     }
     
     useEffect(validate, [result])
